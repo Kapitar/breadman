@@ -84,8 +84,7 @@ export default function Home() {
 							Happy Birthday, Brendan! 🎉
 						</h1>
 						<p className="text-lg text-gray-700 mb-6 leading-relaxed">
-							We have a small surprise for you. Complete all the tasks for a
-							surprise!!!
+							We have a small surprise for you. Read all the messages for a suprise!!!
 						</p>
 						<a
 							href="/messages"
