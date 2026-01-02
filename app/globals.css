@@ -142,4 +142,34 @@
     @apply bg-background text-foreground;
     cursor: url("/breadcursor.png") 0 0, auto;
   }
+  button,
+  a,
+  [role="button"],
+  [onclick],
+  input[type="button"],
+  input[type="submit"] {
+    cursor: url("/breadcursor-active.png") 0 0, pointer !important;
+  }
+}
+
+@layer utilities {
+  .cursor-pointer {
+    cursor: url("/breadcursor-active.png") 0 0, pointer !important;
+  }
+  [style*="cursor: pointer"],
+  [style*="cursor:pointer"] {
+    cursor: url("/breadcursor-active.png") 0 0, pointer !important;
+  }
+}
+
+/* Global override for pointer cursor - outside layers for maximum specificity */
+.cursor-pointer,
+[style*="cursor: pointer"],
+[style*="cursor:pointer"],
+button:not([disabled]),
+a:not([disabled]),
+[role="button"]:not([disabled]),
+input[type="button"]:not([disabled]),
+input[type="submit"]:not([disabled]) {
+  cursor: url("/breadcursor-active.png") 0 0, pointer !important;
 }
