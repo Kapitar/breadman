@@ -1,16 +1,28 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const photos = Array.from({ length: 25 }, (_, i) => i + 1);
+  const [photos, setPhotos] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchPhotos = async () => {
+      const response = await fetch("/api/photos");
+      const data = await response.json();
+      setPhotos(data);
+    };
+    fetchPhotos();
+  }, []);
 
   return (
     <div className="relative flex items-center justify-center min-h-screen overflow-hidden">
-      <div className="absolute inset-0 grid grid-cols-5 grid-rows-5 gap-2 p-2 -z-10">
-        {photos.map((photo) => (
-          <div key={photo} className="relative bg-gray-300 rounded overflow-hidden">
+      <div className="absolute inset-0 grid grid-cols-12 grid-rows-6 gap-2 p-2 -z-10">
+        {photos.map((photo, index) => (
+          <div key={index} className="relative bg-gray-300 rounded overflow-hidden">
             <Image
-              src={`https://picsum.photos/200/200?random=${photo}`}
-              alt={`Photo ${photo}`}
+              src={`/photos/${photo}`}
+              alt={`Photo ${index}`}
               fill
               className="object-cover"
             />
