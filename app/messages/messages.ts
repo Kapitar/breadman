@@ -27,6 +27,6 @@ export const messages = [
 	{
 		author: "Tristan",
 		text: "Hello unc. Congrats on another rotation, cakes and candles fr. 🫃",
-		image: "tristan.png",
+		image: "tristan.jpg",
 	},
 ] as { author: string; text: string; image?: string }[];
