@@ -132,10 +132,14 @@
 }
 
 @layer base {
+  html {
+    cursor: url("/breadcursor.png") 0 0, auto;
+  }
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    cursor: url("/breadcursor.png") 0 0, auto;
   }
 }
