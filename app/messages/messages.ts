@@ -1,5 +1,4 @@
 export const messages = [
-    {author: 'Artem', text: 'Hello', image: 'IMG_6685.jpg'},
-    {author: 'Lily', text: 'How are you?', image: 'IMG_6950.jpg'},
-    {author: 'Brendan', text: 'I love you both'},
+    {author: 'Artem', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci sem, scelerisque id sapien eget, gravida hendrerit lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sed sem urna. Fusce nec egestas neque. In ultricies feugiat pretium. Mauris tincidunt magna libero, vitae pulvinar dolor convallis vel. Quisque in nulla nec risus imperdiet sagittis id non erat. Cras sit amet laoreet quam, et gravida diam. Mauris a justo nisi. Vivamus ac nisl arcu.', 'image': 'artem.png'},
+    {author: 'Lily', text: 'Happy 19th birthday! Wow you’re so old now. Thank you for being my friend and watching me crash out every exam :D Though we can’t meet up physically, I hope you have the best day ever :3', 'image': 'lily.png'},
 ]as {author: string, text: string, image?: string}[]
