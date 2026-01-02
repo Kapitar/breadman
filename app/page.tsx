@@ -17,10 +17,9 @@ export default function Home() {
 			setPhotos(data);
 		};
 		fetchPhotos();
-
-    setTimeout(() => {
-      confettiRef.current?.fire({});
-    }, 500)
+		setTimeout(() => {
+			confettiRef.current?.fire({});
+		}, 500);
 	}, []);
 
 	const renderPhotos = (photoList: string[], rowKey: string) =>
@@ -44,9 +43,9 @@ export default function Home() {
 
 	const rows = [
 		{ duration: "50s", start: 0, end: 1 / 5 },
-		{ duration: "70s", start: 1 / 5, end: 2 / 5 },
-		{ duration: "60s", start: 2 / 5, end: 3 / 5 },
-		{ duration: "55s", start: 3 / 5, end: 4 / 5 },
+		{ duration: "60s", start: 1 / 5, end: 2 / 5 },
+		{ duration: "55s", start: 2 / 5, end: 3 / 5 },
+		{ duration: "45s", start: 3 / 5, end: 4 / 5 },
 		{ duration: "65s", start: 4 / 5, end: 1 },
 	];
 
@@ -63,7 +62,13 @@ export default function Home() {
 							<Marquee
 								key={`row-${i}`}
 								pauseOnHover
-								className={`[--duration:${row.duration}] flex-1`}
+								reverse
+								className="flex-1"
+								style={
+									{
+										"--duration": row.duration,
+									} as React.CSSProperties
+								}
 							>
 								{renderPhotos(rowPhotos, `row${i + 1}`)}
 							</Marquee>
