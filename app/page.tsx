@@ -19,7 +19,7 @@ export default function Home() {
 		fetchPhotos();
 		setTimeout(() => {
 			confettiRef.current?.fire({});
-		}, 500);
+		}, 1000);
 	}, []);
 
 	const renderPhotos = (photoList: string[], rowKey: string) =>
@@ -84,7 +84,8 @@ export default function Home() {
 							Happy Birthday, Brendan! 🎉
 						</h1>
 						<p className="text-lg text-gray-700 mb-6 leading-relaxed">
-							We have a small surprise for you. Read all the messages for a suprise!!!
+							We have a small surprise for you. Read all the messages to find
+							out!!!
 						</p>
 						<a
 							href="/messages"
