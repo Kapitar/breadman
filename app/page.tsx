@@ -17,6 +17,10 @@ export default function Home() {
 			setPhotos(data);
 		};
 		fetchPhotos();
+
+    setTimeout(() => {
+      confettiRef.current?.fire({});
+    }, 500)
 	}, []);
 
 	const renderPhotos = (photoList: string[], rowKey: string) =>
