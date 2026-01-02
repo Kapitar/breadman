@@ -3,8 +3,10 @@
 import { messages } from "./messages";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Messages() {
+  const router = useRouter();
   const [selectedMessage, setSelectedMessage] = useState<
     (typeof messages)[0] | null
   >(null);
@@ -65,8 +67,7 @@ export default function Messages() {
       <div className="fixed bottom-0 left-0 right-0 p-6 md:p-8 flex justify-center bg-gradient-to-t from-slate-900 via-slate-900/95 to-transparent">
         <button
           onClick={() => {
-            // Handle next action here
-            console.log("Next clicked!");
+            window.location.href = "https://gatech.zoom.us/j/97026609970?pwd=FFWY7gBz87LKj5TiNVWFAVkhNpXDrp.1";
           }}
           disabled={!allMessagesViewed}
           className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform ${
