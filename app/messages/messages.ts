@@ -84,4 +84,9 @@ export const messages = [
 		text: "Brendiddy!! HAPPY BIRTHDAY!!! I'm looking forward to another semester with you and Jimmy John Fridays MUST continue. I am truly so glad that we met each other and we ARE getting massive this sem. Love you bro always feel free to stop by the four one one.",
 		image: "andrew.png",
 	},
+	{
+		author: "Kelvin",
+		text: "Happy Birthday Brendan!!!🥳 祝你生日快樂🎂🎁🎊🎉🎈 I am so happy that I can become a friend with you, with lots of crazy and amusing chats😉 Let’s keep working together next semester, especially with our language lessons😎",
+		image: "kelvin.png",
+	},
 ] as { author: string; text: string; image?: string }[];
