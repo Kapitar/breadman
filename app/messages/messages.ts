@@ -57,7 +57,7 @@ export const messages = [
 	{
 		author: "Tyler",
 		text: "Happruay bathday Brendussy! 👅One more year till official unc status. 🤓👆🏻Cuul guy too ig, kinda glad we met 🫩✌🏻",
-		image: "IMG_2026103_230145_157.jpg",
+		image: "tyler.jpg",
 	},
 	{
 		author: "Winston",
@@ -73,5 +73,15 @@ export const messages = [
 		author: "Zelin",
 		text: "Happy Birthday Brotha!, missing u fo sho. Can’t wait to see you again and we gotta run it back and hoop. Congrats on being 19. Love u gangy!",
 		image: "zelin.png",
+	},
+	{
+		author: "Craig",
+		text: "Hey 2nd favorite college chef, happy birthday!! I feel like we've gotten to know each other in such a short time (and late nights). Ignoring how awful physics was… 2026 is your year!",
+		image: "criag.png",
+	},
+	{
+		author: "Andrew",
+		text: "Brendiddy!! HAPPY BIRTHDAY!!! I'm looking forward to another semester with you and Jimmy John Fridays MUST continue. I am truly so glad that we met each other and we ARE getting massive this sem. Love you bro always feel free to stop by the four one one.",
+		image: "andrew.png",
 	},
 ] as { author: string; text: string; image?: string }[];
